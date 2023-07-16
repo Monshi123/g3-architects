@@ -117,17 +117,116 @@ main{
     line-height: 26px;
     margin-top: 20px;
 }
+/* section facts start */
+.facts{
+    padding: 50px 200px;
+}
+.facts h3{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.facts .facts-title1{
+    width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 20px;
+}
+.facts-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 30px;
+    gap: 60px;
+    
+}
+.facts-box{
+    width: 180px;
+    height: 130px;
+    padding: 20px 10px;
+    border: 1px solid #FF900E;
+    text-align: center;
+}
+.facts-box img{
+    width: 30%;
+}
+.facts-box .number{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #424242;
+}
+.facts-descripton{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+/* sponspors section start */
+.sponspors{
+    padding: 20px 200px;
+    margin-bottom: 50px;
+}
+.sponspors-containt{
+    text-align: center;
+    width: 600px;
+    margin-left: 120px;
+}
+.sponspors-taitle{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.sponspors-description{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #727272;
+}
+.sponspors-sub-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 90px;
+}
+.sponspors-sub-container img{
+    width: 100%;
+}
+footer{
+    padding: 10px 200px;
+}
+.footer-containt{
+    width: 850px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #FFF4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.copy{
+    width: 600px;
+    font-size: 20px;
+    font-weight: 400px;
+    color: #424242;
 
-
-
+}
 
 /* media quarey start */
 @media screen and (max-width: 576px) {
-     header, .features-cotainer{
+     header, .features-cotainer, .facts, .facts-container{
         padding: 20px;
      }
-     nav, .features-cotainer{
+     nav, .features-cotainer,
+     .facts-container{
         flex-direction: column;
+     }
+     .features-pic{
+        grid-template-columns: 1fr;
      }
      nav ul, .features-containt{
         margin-top: 30px;
