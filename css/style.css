@@ -117,6 +117,78 @@ main{
     line-height: 26px;
     margin-top: 20px;
 }
+/* enjoy section start */
+.enjoy{
+   padding: 20px 200px;
+   margin: 0 auto;
+}
+.enjoy-title{
+    width: 460px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    border-left: 2px solid #FF900E;
+    padding: 0px 15px;
+}
+.enjoy-description{
+    width: 580px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 20px;
+}
+.enjoy-text-box{
+    width: 500px;
+    height: 120px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.06);
+}
+.enjoy-text-title{
+    font-size: 20px;
+    width: 600;
+    color: #131313;
+}
+.enjoy-text-description{
+    width: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 26px;
+    margin-top: 10px;
+}
+.enjoy-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.enjoy-pic img{
+    width: 140%;
+}
+.button-containt{
+    margin-top: -60px;
+    margin-left: -30px;
+}
+.enjoy-btn{
+    padding: 30px 40px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+}
+.button-title{
+    width: 200px;
+    font-size: 45px;
+    font-weight: 700px;
+    line-height: 50px;
+    text-align: center;
+}
+
 /* section facts start */
 .facts{
     padding: 50px 200px;
@@ -171,7 +243,7 @@ main{
 .sponspors-containt{
     text-align: center;
     width: 600px;
-    margin-left: 120px;
+    padding-left: 120px;
 }
 .sponspors-taitle{
     font-size: 45px;
@@ -197,6 +269,7 @@ main{
 }
 footer{
     padding: 10px 200px;
+    margin-bottom: 120px;
 }
 .footer-containt{
     width: 850px;
@@ -213,16 +286,20 @@ footer{
     font-size: 20px;
     font-weight: 400px;
     color: #424242;
+    text-align: center;
 
 }
 
 /* media quarey start */
-@media screen and (max-width: 576px) {
-     header, .features-cotainer, .facts, .facts-container{
+@media screen and (max-width: 576px){
+     header, .features-cotainer, .facts, .facts-container, 
+     .enjoy{
         padding: 20px;
      }
      nav, .features-cotainer,
-     .facts-container{
+     .facts-container,
+     .sponspors-sub-container, 
+     .enjoy-container{
         flex-direction: column;
      }
      .features-pic{
@@ -232,8 +309,35 @@ footer{
         margin-top: 30px;
         padding-left: 20px;
      }
+     .sponspors, 
+     .enjoy{
+      padding-left: 20px;  
+     }
+     .footer-containt, 
+     .enjoy-description, 
+     .enjoy-text-box, 
+     .enjoy-text-description{
+        width: 400px;
+     }
+     .sponspors-description, 
+     .sponspors-containt, 
+     .enjoy-pic{
+        width: 300px;
+     }
+     .enjoy-pic{
+        margin-left: -150px;
+     }
+     .facts-container, 
+     .sponspors-sub-container{
+        margin-left: 90px;
+     }
+    .sponspors-containt{
+        margin-left: -50px;
+    }
+    footer{
+        margin-left: -140px;
+    }
 }
-
 @media screen and (min-width: 576px) and (max-width: 992px) {
     header, .features-cotainer{
         padding: 50px;
@@ -248,4 +352,5 @@ footer{
      .features-containt{
         margin-top: 30px;
      }
+     
 }
